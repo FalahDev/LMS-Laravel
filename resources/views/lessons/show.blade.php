@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <chat :user="{{ auth()->user() }}" :resource="{{ $lesson->id }}" :type="'lesson'"></chat>
+                <!--<chat :user="{{ auth()->user() }}" :resource="{{ $lesson->id }}" :type="'lesson'"></chat>-->
             </div>
         </div>
     </div>

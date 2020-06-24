@@ -101,6 +101,7 @@
                     </li>
                     @can('view_admin')
                     <li class="nav-header">@lang('menus.administration')</li>
+                    @can('view_roles')
                     <li class="nav-item">
                         <a href="{{ route('roles.index') }}" class="nav-link">
                             <i class="nav-icon fas fa-lock"></i>
@@ -109,6 +110,7 @@
                             </p>
                         </a>
                     </li>
+                    @endcan
                     <li class="nav-item">
                         <a href="{{ route('courses.index') }}" class="nav-link">
                             <i class="nav-icon fas fa-book"></i>

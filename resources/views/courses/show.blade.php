@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <chat :user="{{ auth()->user() }}" :resource="{{ $course->id }}" :type='"course"'></chat>
+                <!--<chat :user="{{ auth()->user() }}" :resource="{{ $course->id }}" :type='"course"'></chat>-->
             </div>
         </div>
     </div>
@@ -82,7 +82,7 @@
             }).then((result) => {
                 if (result.value) {
                     Swal.fire({
-                        title: `Suscrito`,
+                        title: `{!! __('Subscribed') !!}`,
                     })
                 }
                 if(result.dismiss) {
